@@ -1,5 +1,6 @@
 import prisma from '@/libs/prismadb';
 import { NextResponse } from 'next/server';
+import { revalidatePath } from 'next/cache';
 
 export const POST = async (request) => {
   try {
@@ -32,6 +33,6 @@ export const GET = async () => {
 
     return NextResponse.json(posts);
   } catch (error) {
-    return NextResponse.json({ message: 'GET Error', error }, { status: 500 });
+    return NextResponse.json({ revalidatePath: true, message: 'GET Error', error }, { status: 500 });
   }
 };

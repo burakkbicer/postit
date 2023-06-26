@@ -6,8 +6,8 @@ export default function Navbar() {
       <Link href='/' className='text-white font-bold'>
         Postit.
       </Link>
-      <Link href='/addTopic' className='bg-white p-2 rounded-md'>
-        Konu Ekle
+      <Link href='/addPost' className='bg-white p-2 rounded-md'>
+        Yazı Ekle
       </Link>
     </nav>
   );
