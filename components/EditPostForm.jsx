@@ -1,6 +1,6 @@
 import Input from '@/components/Input';
 
-export default function EditTopicForm() {
+export default function EditPostForm() {
   return (
     <form className='flex flex-col gap-3'>
       <Input placeholder='Konu Başlığı' />

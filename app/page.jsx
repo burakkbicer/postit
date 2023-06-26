@@ -1,5 +1,5 @@
-import TopicsList from '@/components/TopicsList';
+import PostsList from '@/components/PostsList';
 
 export default function Home() {
-  return <TopicsList />;
+  return <PostsList />;
 }
